@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/selim/loja_virtual/BuildConfig.java
+ com.selim.loja_virtual.BuildConfig

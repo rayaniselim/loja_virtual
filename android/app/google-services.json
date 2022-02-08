@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "373567951827",
+    "firebase_url": "https://loja-virtual-selim-default-rtdb.firebaseio.com",
+    "project_id": "loja-virtual-selim",
+    "storage_bucket": "loja-virtual-selim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373567951827:android:b3b2a155f89e26f44b9526",
+        "android_client_info": {
+          "package_name": "com.selim.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373567951827-iab3ek9p52v0oda7m6v521ga5iu3fqvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6EwLhczm6XGiFCPgS9EBPNR8VOOXXg7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373567951827-iab3ek9p52v0oda7m6v521ga5iu3fqvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
