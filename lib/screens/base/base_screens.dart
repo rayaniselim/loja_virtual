@@ -1,31 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:loja_virtual/common/common_custom_drawer/custom_drawer.dart';
+import 'package:loja_virtual/models/page_maneger.dart';
+import 'package:loja_virtual/screens/login/login_screen.dart';
+import 'package:provider/provider.dart';
 
 class BaseScreen extends StatelessWidget {
  
- final PageController pageController = PageController();
+ final pageController = PageController(initialPage: 0);
 
   @override
 Widget build (BuildContext context) {
-  return PageView(
+  return Provider(
+    create: (_) => PageManager(pageController), 
+    child: PageView(
     controller: pageController,
     physics: const NeverScrollableScrollPhysics(),
     // ele tira o arrastar pro lado, ai so funciona no botão
     children: <Widget>[
+     LoginScreen(),
       Scaffold(
         drawer: CustomDrawer(),
         appBar: AppBar(
-          title: const Text('Home'),
+          title: const Text('Home2'),
         ),
       ),
-      Container(
-        color: Colors.red,
-       /*  child: ElevatedButton(onPressed: (){pageController.jumpToPage(1); },
-        child: Text('Proximo'), ), */
+      Scaffold(
+        drawer: CustomDrawer(),
+        appBar: AppBar(
+          title: const Text('Home3'),
+        ),
       ),
-      Container(color: Colors.green,),
-      Container(color: Colors.yellow,),
+      Scaffold(
+        drawer: CustomDrawer(),
+        appBar: AppBar(
+          title: const Text('Home4'),
+        ),
+      ),
+            // FOI TIRADO AS CORES ABAIXO.
+             /*   Container(color: Colors.red,
+            /*  child: ElevatedButton(onPressed: (){pageController.jumpToPage(1); },
+            child: Text('Proximo'), ), */ 
+                  ),
+             Container(color: Colors.green,),
+             Container(color: Colors.yellow,), */
     ]
+  )
   );
 }
 }

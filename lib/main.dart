@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Loja Virtual Ray',
       theme: ThemeData(
-        /* primarySwatch: Colors.pink, */
-      /*   accentColor: Colors.pink[100], */
-        primaryColor: Colors.pink[300],
+        primaryColor: const Color.fromARGB(255, 4, 125, 141),
+       scaffoldBackgroundColor: const Color.fromARGB(255, 4, 125, 141),
+       appBarTheme: const AppBarTheme(
+         elevation: 0
+       ),
        /*  appBarTheme: AppBarTheme(color: Colors.black), */
         visualDensity: VisualDensity.adaptivePlatformDensity,
 
