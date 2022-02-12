@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:loja_virtual/models/user_manager.dart';
+import 'package:provider/provider.dart';
 import 'screens/base/base_screens.dart';
 
 void main() {
@@ -8,7 +10,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return Provider(
+      create: (_) => UserManager() ,
+      child: MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Loja Virtual Ray',
       theme: ThemeData(
@@ -22,6 +26,7 @@ class MyApp extends StatelessWidget {
 
       ),
 home: BaseScreen(),
+    )
     );
   }
 }
