@@ -10,14 +10,16 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Provider(
+    return ChangeNotifierProvider(
       create: (_) => UserManager() ,
       child: MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Loja Virtual Ray',
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 4, 125, 141),
-       scaffoldBackgroundColor: const Color.fromARGB(255, 4, 125, 141),
+       // primaryColor: const Color.fromARGB(255, 4, 125, 141),
+        primaryColor: const Color(0xFFff4d88),
+       scaffoldBackgroundColor: const Color(0xFFff4d88),
+      // scaffoldBackgroundColor: const Color.fromARGB(255, 4, 125, 141),
        appBarTheme: const AppBarTheme(
          elevation: 0
        ),
